@@ -1,0 +1,174 @@
+/*// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+.pharam{display: inline-block;}
+.ar{
+	width:250px;
+	height: 44px;
+	margin-left: 17%;
+	margin-top: 16%;
+	color: #ffffff;
+	background: none;
+	border:thin;
+	box-shadow: none;
+	border: 1px solid #00A78B;
+    border-radius: 3px;
+    letter-spacing: 4px;
+font-size: 23px;
+padding-left: 6px;
+}
+input:focus{outline: none !important;}
+.re{
+	width:220px;
+	height: 44px;
+	margin-left: 1%;
+	margin-top: 16%;
+	position: absolute;
+	color: #ffffff;
+	background: none;
+	border:thin;
+	box-shadow: none;
+	border: 1px solid #00A78B;
+    border-radius: 3px;
+    letter-spacing: 4px;
+	font-size: 20px;
+	padding-left: 6px;
+}
+.oc{
+	width:218px;
+	height: 44px;
+	margin-left: 18%;
+	margin-top: 219px;
+	position: absolute;
+	color: #ffffff;
+	background: none;
+	border:thin;
+	box-shadow: none;
+	border: 1px solid #00A78B;
+    border-radius: 3px;
+    letter-spacing: 4px;
+	font-size: 21px;
+	padding-left: 6px;
+}
+
+.pun{
+	width:140px;
+	height: 48px;
+	letter-spacing: 4px;
+	text-align: center;
+	border:1px solid #00A78B;
+	color:#00A78B;
+	transition:all 0.4s linear;
+	border-radius: 4px; 
+	margin-left: 35%;
+	margin-top: 219px;
+	font-size: 23px;
+	padding-top: 1px;
+	text-decoration: none;
+	background-color: none;
+	background:none;
+	position: absolute;
+}
+.pun:hover{box-shadow: 0 0 12px #00A78B;
+cursor:hand;cursor: pointer;color:#ffffff;background-color: #333333;}
+
+.par{
+	position: absolute;
+	margin-left: 19%;
+	margin-top: 17%;
+	letter-spacing: 4px;
+	color: #9C9E9D;
+	font-size: 23px;
+}
+.pre{
+	position: absolute;
+	margin-left: 37%;
+	margin-top: -36px;
+	letter-spacing: 4px;
+	color: #9C9E9D;
+	font-size: 23px;
+}
+.arselect{
+	margin-left: 17%;
+	margin-top: 0;
+	width:251px;
+	height: 280px;
+    overflow: scroll;
+    font-size: 23px;
+	letter-spacing: 4px;
+	color:#00A78B;
+	border:1px solid #00A78B;
+	box-shadow: 0 0 4px #00A78B;
+	text-align: center;
+	position: absolute;
+	padding-left:0px;
+	overflow-x: hidden;
+}
+.reselect{
+	margin-left: 36%;
+	margin-top: 0;
+	width:224px;
+	height: 260px;
+    overflow: scroll;
+    font-size: 23px;
+	letter-spacing: 4px;
+	color:#00A78B;
+	border:1px solid #00A78B;
+	box-shadow: 0 0 4px #00A78B;
+	text-align: center;
+	position: absolute;
+	padding-left:0px;
+	overflow-x: hidden;
+}
+.ocselect{
+	margin-left: 53%;
+	margin-top: 0;
+	width:224px;
+	height: 170px;
+    overflow: hidden;
+    font-size: 23px;
+	letter-spacing: 4px;
+	color:#00A78B;
+	border:1px solid #00A78B;
+	box-shadow: 0 0 4px #00A78B;
+	text-align: center;
+	position: absolute;
+	padding-left:0px;
+	overflow-x: hidden;
+}
+.poc{
+	position: absolute;
+	margin-left: 54%;
+	margin-top: -34px;
+	letter-spacing: 4px;
+	color: #9C9E9D;
+	font-size: 20px;
+}
+
+.repee{transition:all 0.3s linear;
+line-height: 2em;
+list-style: none;
+text-decoration: none;
+padding-left: 0px;
+}
+.repee:hover{background-color: #333333;
+cursor: pointer;cursor: hand;
+list-style: none;
+text-decoration: none;
+color: #ffffff;
+
+}
+.ocpee{transition:all 0.3s linear;
+line-height: 2em;
+list-style: none;
+text-decoration: none;
+padding-left: 0px;
+}
+.ocpee:hover{background-color: #333333;
+cursor: pointer;cursor: hand;
+list-style: none;
+text-decoration: none;
+color: #ffffff;
+
+}

@@ -1,0 +1,198 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to. add application-{}wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'welcome';
+@import 'priest_users';
+
+ .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.city-search-form{
+
+}
+
+.a{
+	width:300px;
+	height: 44px;
+	margin-left: 27%;
+	margin-top: 20%;
+	color: #ffffff;
+	
+	background: none;
+	border:thin;
+	box-shadow: none;
+	border: 1px solid #00A78B;
+/*	-webkit-box-shadow: 0 12px 8px -8px #333333;
+       -moz-box-shadow: 0 12px 8px -8px #333333;
+            box-shadow: 0 12px 8px -8px #333333;*/
+    border-radius: 3px;
+    letter-spacing: 4px;
+font-size: 23px;
+padding-left: 6px;
+}
+input:focus{outline: none !important;}
+
+
+
+
+.select{
+	margin-left: 27%;
+	margin-top: 0;
+	width:305px;
+	height: 300px;
+    overflow: scroll;
+    font-size: 23px;
+	letter-spacing: 4px;
+	color:#00A78B;
+	border:1px solid #00A78B;
+	box-shadow: 0 0 4px #00A78B;
+	text-align: center;
+	position: absolute;
+	padding-left:0px;
+	overflow-x: 5 scroll;
+	overflow-x: hidden;
+}
+.bun{
+	width:140px;
+	height: 48px;
+	letter-spacing: 4px;
+	text-align: center;
+	border:1px solid #00A78B;
+	color:#00A78B;
+	transition:all 0.4s linear;
+	border-radius: 5px; 
+	margin-left: 3%;
+	margin-top: 20%;
+	font-size: 23px;
+	padding-top: 1px;
+	text-decoration: none;
+	background-color: none;
+	background:none;
+	position: absolute;
+}
+.bun:hover{box-shadow: 0 0 12px #00A78B;
+cursor:hand;cursor: pointer;color:#ffffff;background-color: #333333;}
+
+.pe{position: absolute;
+	margin-left: 29%;
+	margin-top: 21%;
+	letter-spacing: 4px;
+	color: #9C9E9D;
+	font-size: 23px;
+	}
+
+.pee{transition:all 0.3s linear;
+line-height: 2em;
+list-style: none;
+text-decoration: none;
+padding-left: 0px;
+}
+.pee:hover{background-color: #333333;
+cursor: pointer;cursor: hand;
+list-style: none;
+text-decoration: none;
+color: #ffffff;
+
+}
+
+// Place all the styles related to the landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*
+		    /*//*/***************************************
+			*******//*/**********************************
+			**********       *********      *************
+			********    ***  *********  *****  **********
+			*******  *****************  *****  **********
+			*******  *****************  *****  **********
+			*******  *****************  *****  **********
+			********    ***  *********  ****  ***********
+			**********       ***  ****      ******//*/***
+			*********************************************
+			******** © CodeDis - Sumeet(Lead dev) *//*/**
+			*********************************************
+*/
+@mixin trans(){transition:all 0.3s linear;}
+@mixin shad($c:#dfdfdf){box-shadow: 0 0 15px $c;}
+@mixin mho(){color:#F87E62;cursor: pointer; cursor: hand;text-shadow:0 0 1px #F87E62;}
+
+
+.sideBar{
+	text-align: center;
+	position: fixed;
+	background-color: #576E76;
+	height: 100%;
+	margin-top: -20px;
+	@include shad(#576E76);
+	    .logoHolder{
+	    	background-color: #A9C4CB;
+	    	@include trans();
+				img{
+				width:120px;
+				height: 120px;
+				margin-top: 10%;
+				margin-bottom: 7%;
+				margin-left: 4%;
+				padding-right: 4%;
+
+				}
+			}
+		.sideMenu{
+			line-height: 20px;
+			margin-top: 35%;
+			
+			
+			.m1,.m2,.m3,.m4,.m5{
+				margin-top: 20%;
+				margin-bottom: 6%;
+				padding-top: 3%;
+				padding-bottom:5%;	
+				@include trans();
+
+			}
+			.m5{margin-top: 95%;}
+		}
+}
+
+
+.logoHolder:hover{
+background-color: #08536F;
+@include shad(#08536F);
+}
+.m5:hover{color:#F87E62;cursor: pointer; cursor: hand;text-shadow:0 0 1px #F87E62;}
+.m4:hover{@include mho();}
+.m3:hover{@include mho();}
+.m2:hover{@include mho();}
+.m1:hover{@include mho();}
+
+.foot{
+	width: 101%;
+	border-top: 4px solid #C09A67;
+	clear: both;
+	margin-top: 7%;
+	padding-top: 2%;
+	ul{list-style: none;}
+	.foot-img{
+		width:180px;
+		height: 40px;
+	}
+}
+.leee:hover{color:#C09A67;cursor: pointer; cursor: hand;}

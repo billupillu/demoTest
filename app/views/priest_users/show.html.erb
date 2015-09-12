@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @priest_user.area_id %>
+</p>
+
+<p>
+  <strong>Circles:</strong>
+  <%= @priest_user.circles %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @priest_user.name %>
+</p>
+
+<p>
+  <strong>Religion:</strong>
+  <%= @priest_user.religion %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @priest_user.phone %>
+</p>
+
+<p>
+  <strong>Brief:</strong>
+  <%= @priest_user.brief %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @priest_user.description %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @priest_user.icon %>
+</p>
+
+<%= link_to 'Edit', edit_priest_user_path(@priest_user) %> |
+<%= link_to 'Back', priest_users_path %>

@@ -1,0 +1,20 @@
+	<div class="city-search-form">
+	<!-- 	<p class="pe">Select City</p><input type="text" id="a">
+		
+		<ul class="select">
+		<%# for list in @lists%>
+		<li class="pee noselect"><%=list.name%></li>
+		<%#end%>
+		</ul>
+		<div class="bun noselect">Search</div> -->
+		<%=form_for(:city, url: {action: @t}) do |f|%>
+		<p class="pe">Select City</p>
+		<%=f.text_field(:name, id: "a")%>
+		<%=submit_tag ("Search")%>
+		<ul class="select">
+		<% for list in @lists%>
+		<li class="pee noselect"><%=list.name%></li>
+		<%end%>
+		</ul>
+		
+	</div>

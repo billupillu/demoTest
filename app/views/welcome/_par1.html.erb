@@ -1,0 +1,14 @@
+
+<%=form_tag({controller: "welcome", action: "ada"}, method: "get", class: "city-search-form", remote: true) do%>
+ <p class="pe">Select City</p> 
+<input type="text" name="name" class="a" autocomplete="off" >
+<%=submit_tag('Search',class: "bun noselect")%>
+<%end%>	
+<ul class="select">
+	<%@lists.each do |list| %>
+		<li class="pee noselect"><%=list.name%></li>
+	<%end%>
+</ul>
+
+
+

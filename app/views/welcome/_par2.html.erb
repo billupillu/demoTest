@@ -1,0 +1,113 @@
+<div class="pilu"><div class="foo">
+
+<form action="/priest_users" method="get" class="pharm">
+<p class="par noselect">Select Area</p> 
+<input type="text" name="area" class="ar" autocomplete="off" >
+
+<p class="pre noselect">Select Religion</p> 
+<input type="text" name="religion" class="re" autocomplete="off" >
+
+<input type="text" name="ocassion" class="oc" autocomplete="off" >
+
+<input type="submit" name="commit" value="Priests" class="pun noselect">
+</form>
+<ul class="arselect">
+	<%@areaz.each do |area| %>
+		<li class="pee noselect"><%=area.name%></li>
+	<%end%>
+</ul>
+<ul class="reselect">
+	<li class="repee noselect">Hindu</li><li class="repee noselect">Muslim</li>
+	<li class="repee noselect">Sikh</li><li class="repee noselect">Christian</li>
+	<li class="repee noselect">Buddhist</li><li class="repee noselect">Zoroastrin</li>
+</ul>
+<ul class="ocselect">
+	<li class="ocpee noselect">Small Ceremony</li><li class="ocpee noselect">Wedding</li>
+</ul>
+<p class="poc noselect">Select Ocassion</p>
+</div></div>
+
+<%=javascript_tag do%>
+$('.foo').hide();
+$('.arselect').hide();
+        $(".ar").click(function(){
+        $(".arselect").slideToggle(300);
+        $(".par").animate({top:"-48px"},80,function(){
+                $(".par").animate({left:"-28px"},100,function(){
+                    $(".par").css({"color":"#00A78B"});
+                    });
+                });
+        });
+        $(".par").click(function(){
+        $(".arselect").slideDown(300);
+        $(".par").animate({top:"-48px"},80,function(){
+                $(".par").animate({left:"-28px"},100,function(){
+                    $(".par").css({"color":"#00A78B"});
+                    });
+                });
+        });
+        $('.pee').click(function(){
+        var bal = $(this).text();
+        $('.ar').val(bal);
+        $(".arselect").slideUp(300);
+            });
+
+
+
+
+
+$('.reselect').hide();
+        $(".re").click(function(){
+        $(".reselect").slideToggle(300);
+        $(".pre").animate({top:"222px"},80,function(){
+                $(".pre").animate({left:"-10px"},100,function(){
+                    $(".pre").css({"color":"#00A78B"});
+                    });
+                });
+        });
+        $(".pre").click(function(){
+        $(".reselect").slideDown(300);
+        $(".pre").animate({top:"222px"},80,function(){
+                $(".pre").animate({left:"-10px"},100,function(){
+                    $(".pre").css({"color":"#00A78B"});
+                    });
+                });
+        });
+        $('.repee').click(function(){
+        var kal = $(this).text();
+        $('.re').val(kal);
+        $(".reselect").slideUp(300);
+            }); 
+
+
+
+
+
+
+$('.ocselect').hide();
+        $(".oc").click(function(){
+        $(".ocselect").slideToggle(300);
+        $(".poc").animate({top:"222px"},80,function(){
+                $(".poc").animate({left:"-10px"},100,function(){
+                    $(".poc").css({"color":"#00A78B"});
+                    });
+                });
+        });
+        $(".poc").click(function(){
+        $(".ocselect").slideDown(300);
+        $(".poc").animate({top:"222px"},80,function(){
+                $(".poc").animate({left:"-10px"},100,function(){
+                    $(".poc").css({"color":"#00A78B"});
+                    });
+                });
+        });
+        $('.ocpee').click(function(){
+        var pal = $(this).text();
+        $('.oc').val(pal);
+        $(".ocselect").slideUp(300);
+            });
+
+
+		
+ <%end%>
+
